@@ -1,9 +1,9 @@
 'use client'
 
-import React, { ElementType } from 'react'
-import Link from 'next/link'
+import Link from 'next/link';
+import React, { ElementType } from 'react';
 
-import classes from './index.module.scss'
+import classes from './index.module.scss';
 
 export type Props = {
   label?: string
@@ -30,7 +30,7 @@ export const Button: React.FC<Props> = ({
   type = 'button',
   disabled,
   invert,
-  children
+  children,
 }) => {
   let el = elFromProps
 
