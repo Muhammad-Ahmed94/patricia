@@ -15,8 +15,8 @@ export const CATEGORIES = `
         title
         media {
           alt
+          width
           height
-          widht
           url
         }
       }
