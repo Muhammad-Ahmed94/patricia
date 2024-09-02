@@ -2,6 +2,7 @@
   "name": "@payloadcms/template-ecommerce",
   "description": "E-commerce template for Payload",
   "version": "1.0.0",
+  "private": true,
   "main": "dist/server.js",
   "license": "MIT",
   "scripts": {
@@ -24,7 +25,7 @@
   "dependencies": {
     "@payloadcms/bundler-webpack": "^1.0.0",
     "@payloadcms/db-mongodb": "^1.0.0",
-    "@payloadcms/plugin-cloud": "^3.0.0",
+    "@payloadcms/plugin-cloud": "^3.0.2",
     "@payloadcms/plugin-nested-docs": "^1.0.8",
     "@payloadcms/plugin-redirects": "^1.0.0",
     "@payloadcms/plugin-seo": "^1.0.10",

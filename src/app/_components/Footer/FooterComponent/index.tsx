@@ -32,6 +32,13 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
               <p>{inclusion.description}</p>
             </li>
           ))}
+          {/* <Image 
+          src='/admin_ui/footer/instagram.svg'
+          alt='instagram'
+          height={36}
+          width={36}
+          className={classes.icon}
+          /> */}
         </ul>
       </Gutter>
 
@@ -39,13 +46,58 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
         <Gutter>
           <div className={classes.wrap}>
             <Link href="/">
-              <Image src="/logo.png" alt="logo" width={170} height={50} />
+              <Image src="/logo-white.png" alt="logo" width={170} height={50} />
             </Link>
 
             <p>{footer.copyright}</p>
 
             <div className={classes.socialLinks}>
-              {navItems.map(item => {
+              {/* Instagram icon */}
+              <Button
+                el="link"
+                href='https://instagram.com/'
+                newTab={true}
+                className={classes.socialLinkItems}
+              >
+                <Image
+                  src="/instagram.svg"
+                  alt='instagram'
+                  width={24}
+                  height={24}
+                  className={classes.socialIcon}
+                />
+              </Button>
+              {/* Facebook icon */}
+              <Button
+                el="link"
+                href='https://facebook.com/'
+                newTab={true}
+                className={classes.socialLinkItems}
+              >
+                <Image
+                  src="/facebook.svg"
+                  alt='facebook'
+                  width={24}
+                  height={24}
+                  className={classes.socialIcon}
+                />
+              </Button>
+              {/* Twitter icon */}
+              <Button
+                el="link"
+                href='https://x.com/'
+                newTab={true}
+                className={classes.socialLinkItems}
+              >
+                <Image
+                  src="/twitter.svg"
+                  alt='twitter'
+                  width={24}
+                  height={24}
+                  className={classes.socialIcon}
+                />
+              </Button>
+              {/* {navItems.map(item => {
                 const icon = item?.link?.icon as Media
 
                 return (
@@ -57,7 +109,7 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
                     className={classes.socialLinkItems}
                   >
                     <Image
-                      src={icon?.url}
+                      src='/instagram.svg'
                       alt={item.link.label}
                       width={24}
                       height={24}
@@ -65,7 +117,7 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
                     />
                   </Button>
                 )
-              })}
+              })} */}
             </div>
           </div>
         </Gutter>
