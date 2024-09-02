@@ -1,14 +1,14 @@
 'use client'
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import Image from 'next/image'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
-import { Footer, Media } from '../../../../payload/payload-types';
-import { inclusions, noHeaderFooterUrls } from '../../../constants';
-import { Button } from '../../Button';
-import { Gutter } from '../../Gutter';
-import classes from './index.module.scss';
+import { Footer, Media } from '../../../../payload/payload-types'
+import { inclusions, noHeaderFooterUrls } from '../../../constants'
+import { Button } from '../../Button'
+import { Gutter } from '../../Gutter'
+import classes from './index.module.scss'
 
 const FooterComponent = ({ footer }: { footer: Footer }) => {
   const pathname = usePathname()
@@ -55,13 +55,13 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
               {/* Instagram icon */}
               <Button
                 el="link"
-                href='https://instagram.com/'
+                href="https://instagram.com/"
                 newTab={true}
                 className={classes.socialLinkItems}
               >
                 <Image
                   src="/instagram.svg"
-                  alt='instagram'
+                  alt="instagram"
                   width={24}
                   height={24}
                   className={classes.socialIcon}
@@ -70,13 +70,13 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
               {/* Facebook icon */}
               <Button
                 el="link"
-                href='https://facebook.com/'
+                href="https://facebook.com/"
                 newTab={true}
                 className={classes.socialLinkItems}
               >
                 <Image
                   src="/facebook.svg"
-                  alt='facebook'
+                  alt="facebook"
                   width={24}
                   height={24}
                   className={classes.socialIcon}
@@ -85,13 +85,13 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
               {/* Twitter icon */}
               <Button
                 el="link"
-                href='https://x.com/'
+                href="https://x.com/"
                 newTab={true}
                 className={classes.socialLinkItems}
               >
                 <Image
                   src="/twitter.svg"
-                  alt='twitter'
+                  alt="twitter"
                   width={24}
                   height={24}
                   className={classes.socialIcon}

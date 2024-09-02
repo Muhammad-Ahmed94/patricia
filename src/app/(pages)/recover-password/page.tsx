@@ -23,8 +23,8 @@ export default async function RecoverPassword() {
         <div className={classes.formContainer}>
           <RenderParams className={classes.params} />
 
-          <Link href='/' className={classes.backLink}>
-            <Button label='<- Go Back'  />
+          <Link href="/" className={classes.backLink}>
+            <Button label="<- Go Back" />
           </Link>
           <div className={classes.formTitle}>
             <h3>Forgot Password 🤔</h3>

@@ -3,10 +3,10 @@
 import { createContext, SetStateAction, useContext, useState } from 'react'
 
 interface IContextType {
-    categoryFilters: string[]
-    setCategoryFilters: React.Dispatch<SetStateAction<string[]>>
-    sort: string
-    setSort: React.Dispatch<SetStateAction<string>>
+  categoryFilters: string[]
+  setCategoryFilters: React.Dispatch<SetStateAction<string[]>>
+  sort: string
+  setSort: React.Dispatch<SetStateAction<string>>
 }
 
 export const INITIAL_FILTER_DATA = {

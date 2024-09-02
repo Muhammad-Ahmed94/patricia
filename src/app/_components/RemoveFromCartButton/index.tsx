@@ -29,11 +29,11 @@ export const RemoveFromCartButton: React.FC<{
       className={[className, classes.removeFromCartButton].filter(Boolean).join(' ')}
     >
       <Image
-      src='/assets/icons/delete.svg'
-      alt='delete'
-      width={24}
-      height={24}
-      className={classes.qtnBtn}
+        src="/assets/icons/delete.svg"
+        alt="delete"
+        width={24}
+        height={24}
+        className={classes.qtnBtn}
       />
     </button>
   )

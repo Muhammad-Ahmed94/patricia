@@ -1,9 +1,9 @@
 'use client'
 
-import Link from 'next/link';
-import React, { ElementType } from 'react';
+import Link from 'next/link'
+import React, { ElementType } from 'react'
 
-import classes from './index.module.scss';
+import classes from './index.module.scss'
 
 export type Props = {
   label?: string
