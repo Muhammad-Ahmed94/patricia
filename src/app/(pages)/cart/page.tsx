@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import React, { Fragment } from 'react'
 
 import { Page, Settings } from '../../../payload/payload-types'
 import { staticCart } from '../../../payload/seed/cart-static'
@@ -12,7 +12,6 @@ import { Hero } from '../../_components/Hero'
 import { Message } from '../../_components/Message'
 import { generateMeta } from '../../_utilities/generateMeta'
 import { CartPage } from './CartPage'
-
 import classes from './index.module.scss'
 
 // Force this page to be dynamic so that Next.js does not cache it
@@ -28,7 +27,7 @@ export default async function Cart() {
       slug: 'cart',
     })
   } catch (error) {
-    console.log(error);
+    console.log(error)
     // when deploying this template on Payload Cloud, this page needs to build before the APIs are live
     // so swallow the error here and simply render the page with fallback data where necessary
     // in production you may want to redirect to a 404  page or at least log the error somewhere
